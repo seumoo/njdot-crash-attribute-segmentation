@@ -1,4 +1,4 @@
-# Crash Attribute Segmentation of New Jersey State Vehicle Accident Data
+# Attribute Segmentation of New Jersey State Vehicle Crash Data
 [Machine Learning Nanodegree Capstone Project]
 
 This repository contains the files for my Machine Learning capstone project. The goal of this project was using K-Means clustering algorithms to identify crash patterns across New Jersey municipalities by crash attribute segmentation.
