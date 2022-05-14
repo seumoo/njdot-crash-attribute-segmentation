@@ -1,6 +1,10 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
+# Attribute Segmentation of New Jersey State Vehicle Crash Data
+[Udacity Machine Learning Nanodegree: Capstone Project]
+
+## Table of Contents
 - [Attribute Segmentation of New Jersey State Vehicle Crash Data](#attribute-segmentation-of-new-jersey-state-vehicle-crash-data)
+  - [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
   - [Technologies & Libraries Used](#technologies--libraries-used)
   - [Problem Statement](#problem-statement)
   - [Methodology](#methodology)
@@ -12,9 +16,7 @@
   - [Juypter Notebooks](#juypter-notebooks)
   - [Additional Materials](#additional-materials)
   
-# Attribute Segmentation of New Jersey State Vehicle Crash Data
-[Udacity Machine Learning Nanodegree: Capstone Project]
-
+## Project Overview
 This repository contains my Machine Learning (ML) capstone project files. This project aimed to identify crash patterns across New Jersey municipalities by using Principal Component Analysis and K-Means clustering algorithms to identify crash attribute trends. Crash attributes are characteristics of a crash, such as:
 - alcohol use
 - weather conditions
@@ -40,7 +42,7 @@ The following are data analysis questions I wanted to explore:
 ## Methodology
 Because many stakeholders involved in safety programs use crash data containing serious injuries or fatalities, crash data containing a serious injury or fatality were kept. The resulting dataset was reduced to 6,800 crashes. 
 
-Next, data was pre-processed to prepare for K-means clustering. Because K-means clustering requires numerical data, all categorical data was encoded and normalized (Tables 1 & 2). This step resulted from 20 attributes to 174 attributes. Due to the larger number of attributes, it will be difficult for a K-means model to determine the most important attributes. Therefore, principal component analysis was used to reduce the number of attributes.
+Next, data was pre-processed to prepare for K-means clustering. Because K-means clustering requires numerical data, all categorical data was encoded and normalized (Tables 1 & 2). This step resulted from 20 attributes to 174 attributes. 
 
 <figcaption><b>Table 1: Data with categorical attributes</b></figcaption>
 
@@ -56,6 +58,8 @@ Next, data was pre-processed to prepare for K-means clustering. Because K-means 
 | 1        | 1                    | 0                   | 1                      | 0                     |
 | 2        | 0                    | 1                   | 0                      | 1                     |
 
+
+Due to the larger number of attributes, it will be difficult for a K-means model to determine the most important attributes. Therefore, principal component analysis was used to reduce the number of attributes.
 
 ### Principal Component Analysis (PCA)
 PCA reduces the number of column attributes by removing redundant attributes and maintaining attributes with the highest weight. A 70% variance was chosen resulting in the top 25 attributes to be chosen. After reducing the dataset, the data was used to train a K-means model for attribute segmentation.
