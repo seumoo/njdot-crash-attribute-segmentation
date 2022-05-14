@@ -5,13 +5,15 @@ This repository contains the files for my Machine Learning (ML) capstone project
 
 ## Technologies & Libraries Used
 This project utilizes Jupyter Notebooks with Python 3.8 to perform all data analysis and ML tasks. The two ML libraries used are:
-1. Amazon Sagemaker: an open source ML library for Python integration. Training models uses Amazon's cloud servers and incurs a fee for training time and uptime.
-2. SciKit-learn: a free ML library that is easily imported in any Python enviornment. Training models is free and dependent on your hardware.
+1. **Amazon Sagemaker**: an open source ML library for Python integration. Training models uses Amazon's cloud servers and incurs a fee for training time and uptime.
+2. **SciKit-learn**: a free ML library that is easily imported in any Python enviornment. Training models is free and dependent on your hardware.
 
 ## Repository Structure
+The following section explains this repo's structure and contents.
 
 ### Reports
-
+The following are technical documentation for the project:
+1. **Capstone Report**: details the project goals, methodology, and results. 
 
 ### Juypter Notebooks
 
