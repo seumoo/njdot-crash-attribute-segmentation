@@ -51,7 +51,7 @@ Next, data was pre-processed to prepare for K-means clustering. Because K-means 
 | 1        | Yes              | Rain              |
 | 2        | No               | Dry               |
 
-<figcaption><b>Table 2: Data with encoded attributes/b></figcaption>
+<figcaption><b>Table 2: Data with encoded attributes</b></figcaption>
 
 | Crash ID | Alcohol Involved Yes | Alcohol Involved No | Weather Condition Rain | Weather Condition Dry |
 |----------|----------------------|---------------------|------------------------|-----------------------|
