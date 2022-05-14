@@ -9,8 +9,12 @@ This repository contains the files for my Machine Learning (ML) capstone project
 
 Additionally, this project also compares PCA and clustering results between Amazon Sagemaker and Scikit-learn to identify any differences between the two ML libraries.
 
-### Project Overview
-
+### Problem Statement
+The New Jersey Department of Transportation (NJDOT) publishes crash data based on police reports. From 2014 through 2018, there are over 5 million crash data points with each point having over 20 columns representing an attribute such as "alcohol used" or "weather conditions". The sheer volume of textual data makes it difficult to identify correllations between multiple crash attributes. Data analysis questions I wanted to explore include:
+- What attributes have the highest importance across all crash points?
+- Are there crashes across NJ which have similar groups of attributes?
+- Where are these groups located?
+- How can this analysis help engineers prevent future crashes?
 
 ### Technologies & Libraries Used
 This project utilizes Jupyter Notebooks with Python 3.8 to perform all data analysis and ML tasks. The two ML libraries used are:
