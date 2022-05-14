@@ -7,7 +7,7 @@ This repository contains the files for my Machine Learning (ML) capstone project
 - street lighting type
 - person's injury severity
 
-The results from this analysis identified New Jersey municipalities which had crashes with similar attributes. Based on these results, engineers can identify specific locations 
+The results from this analysis identified New Jersey municipalities which had crashes with similar groups of attributes. Engineers can then identify problematic locations with these attribute groups, potentially implementing safety measures to prevent future crashes. 
 
 ### Technologies & Libraries Used
 This project utilizes Jupyter Notebooks with Python 3.8 to perform all data analysis and ML tasks. The two ML libraries used are:
@@ -34,12 +34,9 @@ Crash data is publicilly avaliable on the New Jersey Department of Transportatio
 The following section explains this repository's structure and contents.
 
     .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
+    ├── Additional Materials                 # Compiled files (alternatively `dist`)
+    ├── Juypter Notebooks                    # Documentation files (alternatively `doc`)
+    ├── Additional Materials                 # Source files (alternatively `lib` or `app`)
     └── README.md
 
 ### Reports
