@@ -78,14 +78,32 @@ Next, data was pre-processed to prepare for K-means clustering. Because K-means 
 
 
 ### Step 2: Principal Component Analysis (PCA)
-PCA reduces the number of column attributes by removing redundant attributes and maintaining attributes with the highest weight. A 70% variance was chosen resulting in the top 25 attributes to be chosen. After reducing the dataset, the data was used to train a K-means model for attribute segmentation.
+PCA reduces the number of column attributes by removing redundant attributes and maintaining attributes with the highest weight. A 70% variance was chosen resulting in the top 25 attributes to be chosen. PCA also groups attribute patterns into "components" (Figure 4). Each component represents a group of attributes that have the highest correlation in a crash across all municipalities. After reducing the dataset, the data and components were used to train a K-means model for attribute segmentation.
+
+![Component #1 Makeup](Additional%20Materials/components/sagemaker/c_1.png)
+<figcaption><b>Figure 4: Attributes making up Component #1</b></figcaption><br>
 
 ### Step 3: K-means Clustering
-To identify crash attribute patterns, a K-means model was trained using the resulting dataset from PCA. K-means algorithms are ideal for identifying similarities or differences within groups; in this case, the algorithm will group 
+To identify crash attribute patterns, a K-means model was trained using the resulting dataset from PCA. K-means algorithms are ideal for identifying similarities or differences within groups; in this case, the algorithm will group municipalities which have crashes with similar attributes. 
+
+The results from the algorithm identifies the correlation between municipality groups (clusters) and PCA attribute components (Figure 5). The x-axis represents each location cluster and y-axis represents each attribute component. The heatmap values indicate correlation - a higher the value indicates a strong correlation is between location cluster and attribute component. 
+
+Because K-means results can be difficult to explain using a standalone heatmap, I wanted to create visuals that would be easy for stakeholders or engineers to understand.
+
+![K-Means Heatmap](Additional%20Materials/heatmaps/sagemaker_heatmap.JPG)
+<figcaption><b>Figure 5: Correlations between Location clusters and PCA components</b></figcaption><br>
 
 ## Step 4: Visualize Results
-The following tables 
+To visualize the final results, each component from PCA was translated and the K-means clusters were seperated into municipality groups. Attribute names in each component were translated into readable titles based on the titles in the New Jersey Police department crash form (Figure 6). Municipalities for each K-means cluster were identified (Figure 7). Using the PCA translations and K-means cluster makeup, groups of locations are correlated with similar crash patterns (Figure 8). 
 
+![Component Translations](repo-media/code_translations.png)
+<figcaption><b>Figure 6: PCA component translation samples</b></figcaption><br>
+
+![Cluster Makeup](repo-media/cluster_makeup.png)
+<figcaption><b>Figure 7: K-means cluster makeup samples</b></figcaption><br>
+
+![Results](repo-media/results.svg)
+<figcaption><b>Figure 8: Municipality clusters with similar crash attributes</b></figcaption><br>
 
 # Repository Structure
 The following section explains this repository's structure and contents.
