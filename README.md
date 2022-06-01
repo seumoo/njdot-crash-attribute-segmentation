@@ -29,7 +29,7 @@ This project utilizes Jupyter Notebooks with Python 3.8 to perform all data anal
 2. **SciKit-learn**: a free ML library easily imported into any Python environment. Training models are free and dependent on your hardware.
 
 ## Problem Statement
-The New Jersey Department of Transportation publishes crash data based on police reports. From 2014 through 2018, there were over 5 million crash data points, with each point having over 20 columns representing an attribute such as "alcohol used" or "weather conditions". The sheer volume of textual data makes it challenging to identify correlations between multiple crash attributes.
+The New Jersey Department of Transportation publishes [crash data based on police reports](https://www.state.nj.us/transportation/refdata/accident/rawdata01-current.shtm). From 2014 through 2018, there were over 5 million crash data points, with each point having over 20 columns representing an attribute such as "alcohol used" or "weather conditions". The sheer volume of textual data makes it challenging to identify correlations between multiple crash attributes.
 
 ![Raw data sample](repo-media/raw_data_sample.png)
 <figcaption><b>Figure 1: Sample of crash data</b></figcaption><br>
