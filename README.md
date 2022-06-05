@@ -1,5 +1,6 @@
 # Attribute Segmentation of New Jersey State Vehicle Crash Data
 Udacity Machine Learning Nanodegree - Capstone Project
+Technologies Used: Python, Jupyter, Amazon Sagemaker, Scikit-learn
 
 ## Table of Contents
   - [Project Overview](#project-overview)
